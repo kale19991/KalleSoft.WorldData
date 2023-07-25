@@ -19,7 +19,7 @@ namespace KalleSoft.WorldData.Core.Dependencys
             service.AddScoped<IPeopleService, PeopleService>();
             #endregion
             #region Infrastructure
-            service.AddSingleton(new DataContext());
+            service.AddSingleton(new DataContext("mongodb://localhost:27017", "WorldData"));
             service.AddScoped<IPeopleRepository, PeopleRepository>();
             #endregion
         }

@@ -9,6 +9,5 @@ namespace KalleSoft.WorldData.Domain.Models.Entities
     {
         public string Streep { get; set; }
         public string? Note { get; set; }
-        public string PersonId { get; set; }
     }
 }

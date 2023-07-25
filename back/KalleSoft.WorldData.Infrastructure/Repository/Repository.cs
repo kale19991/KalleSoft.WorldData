@@ -12,7 +12,7 @@ namespace KalleSoft.WorldData.Infrastructure.Repository
 
         public Repository(DataContext context)
         {
-            this.Collection = context.Database.GetCollection<TEntity>(nameof(TEntity));
+            this.Collection = context.Database.GetCollection<TEntity>(typeof(TEntity).Name);
 
 
         }

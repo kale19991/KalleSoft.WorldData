@@ -7,11 +7,11 @@ namespace KalleSoft.WorldData.Infrastructure
     {
 
         public IMongoDatabase Database { get; }
-        public DataContext()
+        public DataContext(string connectionString, string dataBase)
         {
-            var client = new MongoClient("mongodb://localhost:27017");
+            var client = new MongoClient(connectionString);
 
-            Database = client.GetDatabase("WorldData");
+            Database = client.GetDatabase(dataBase);
         }
     }
 }
