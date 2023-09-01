@@ -14,6 +14,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\KalleSoft.WorldData.Domain\KalleSoft.WorldData.Domain.csproj" />
+    <ProjectReference Include="..\KalleSoft.WorldData.Application\KalleSoft.WorldData.Application.csproj" />
+    <ProjectReference Include="..\KalleSoft.WorldData.Core\KalleSoft.WorldData.Core.csproj" />
   </ItemGroup>
 
 </Project>

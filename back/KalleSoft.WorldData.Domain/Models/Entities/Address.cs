@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 
 namespace KalleSoft.WorldData.Domain.Models.Entities
 {
-    public class Address : Entity<Guid>
+    public class Address //: Entity<string>
     {
-        public required string Streep { get; set; }
+        public string Streep { get; set; }
         public string? Note { get; set; }
-        public Guid PersonId { get; set; }
     }
 }
